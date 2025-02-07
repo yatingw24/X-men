@@ -147,9 +147,6 @@
       <div class="step" id="step4">
         <p>Step four, lorem ipsum dolor sic amet.</p>
       </div>
-      <div class="step" id="step5">
-        <p>Step five, lorem ipsum dolor sic amet.</p>
-      </div>
     </div>
   </section>
   <div class="content">
@@ -220,24 +217,21 @@
     This part sets up your actions. In this case, it's changing the image in the scrolly container.
     */
     d3.select("#step1").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "scrolly-images/simage1.jpg")
     })
 
     d3.select("#step2").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image2.jpg")
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "scrolly-images/simage1.jpg")
     })
 
     d3.select("#step3").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "scrolly-images/simage2.jpg")
     })
 
     d3.select("#step4").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image2.jpg")
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "scrolly-images/simage2.jpg")
     })
 
-    d3.select("#step5").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
-    })
   </script>
   <style>
     /* Change this to adjust the padding between steps */

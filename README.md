@@ -1,6 +1,16 @@
 # The Market Value of Jean Grey Among Female X-Men
 X-Men, first made their debut in American Comics in 1963, are a group of mutants - humans with supernatural power that manifested at puberty - that later reached a huge fanbase. 
+
 Here is the shortcut to my [article:](https://yatingw24.github.io/X-men/)
+
+A great thank to [Rally's Mutant Moneyball](https://rallyrd.com/mutant-moneyball-a-data-driven-ultimate-x-men/?), who provided the context for data collection and a walkthrough of his priliminary data analysis.
+
+## Key Takeaways of my Project
+Jean Grey, heavily referenced in both American comics and the film franchise, remains valuable in the second-hand market;
+
+Readers love a dramatic twist - the death of Jean Grey in 1980 has only made her more sought-after than any female X-Man;
+
+Jean Grey's legacy is passed onto her daughter, Rachel Summers, who saw a highest price for on eBay. 
 
 ## Goal:
 understanding the shift in the market value of female X-Men by comparing their percentage of appearance in the 80s vs. the 90s and average personal price on auction websites such as eBay.\
@@ -13,19 +23,14 @@ Questions that this article aims to answer:
 5. are female X-Men in the 80s just auxiliary?
 
 ## What I Did:
-### Getting Started
-acquired the data from [World Bank;](https://databank.worldbank.org/source/gender-statistics) and downloaded the most recent statistics in a csv file;
+### Tech stack used:
+ - `python - pandas`
+ - `regex`
+ - `csv` 
+
 ### Cleaning and Filtering Data
 1. open the csv file, remove all null values and re-order the countries in which those without any data are moved to the bottom in pandas;
 2. exported the cleaned DataFrame as `ages.csv`:
-
-| Country     |     Male    |    Female   |
-| --------    |     --      |      --     |
-| Afghanistan |    21       |      24     | 
-| Albania     |    24       |      30     |
-| xxx country |    xx       |      xx     |
-|     ...     |    ..       |      ..     |
-| Albania     |not available|not available|
 
 ### Adding URLS 
 1. created the `app.py` file, adding the homepage route:

@@ -3,7 +3,7 @@ X-Men, first made their debut in American Comics in 1963, are a group of mutants
 
 Here is the shortcut to my [article:](https://yatingw24.github.io/X-men/)
 
-A great thank to [Rally's Mutant Moneyball](https://rallyrd.com/mutant-moneyball-a-data-driven-ultimate-x-men/?), who provided the context for data collection and a walkthrough of his priliminary data analysis.
+A great thank to [Rally's Mutant Moneyball](https://github.com/EliCash82/mutantmoneyball/tree/main?tab=readme-ov-file), who provided the context for data collection and a walkthrough of his priliminary data analysis.
 
 ## Key Takeaways of my Project
 Jean Grey, heavily referenced in both American comics and the film franchise, remains valuable in the second-hand market;

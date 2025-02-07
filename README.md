@@ -29,11 +29,28 @@ Questions that this article aims to answer:
  - `csv`
  - `DataWrapper`
 
-### Cleaning and Filtering Data
-1. open the csv file, remove all null values and re-order the countries in which those without any data are moved to the bottom in pandas;
-2. exported the cleaned DataFrame as `ages.csv`:
+### Data Cleaning and Analysis 
+1. assigned a gender for all 26 X-Men:
+```python
+df_xmen['gender'] = df_xmen['Member'].apply(lambda x: 'Female' if x in [
+    'jeanGrey', 'lornaDane', 'ororoMunroe', 'kittyPryde', 
+    'annaMarieLeBeau', 'rachelSummers', 'alisonBlaire', 
+    'jubilationLee', 'betsyBraddock'
+] else 'Male')
+```
+2. created a dataframe, `df_female`, which contains all information, issues each is featured in different decades and market value on various audtion sites.
+3. separated first names and last names and converted each name into the standard name format;
+4. replaced all signs, such as a dollar sign ($) or a percentage sign (%);
+5. selected columns, `member`, `90s_Appearance_Percent` and `80s_Appearance_Percent` to see the change in the amount of presence in issues published in the 80s versus the 90s;
+    `member`: X-Men's names.
+    `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
+    `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
+6. analyzed the market value of each X-Man by pulling out columns `PPI80s_ebay` and `PPI90s_ebay`:
+    `PPI80s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published between 1980 and 1989;
+    `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published after 1990;
+7. exported dataframes into csv ready for upload in Data viz tool.
 
-### Adding URLS 
+### Data Vizs 
 1. created the `app.py` file, adding the homepage route:
 ```python
 @app.route("/")

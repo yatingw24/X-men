@@ -26,7 +26,8 @@ Questions that this article aims to answer:
 ### Tech stack used:
  - `python - pandas`
  - `regex`
- - `csv` 
+ - `csv`
+ - `DataWrapper`
 
 ### Cleaning and Filtering Data
 1. open the csv file, remove all null values and re-order the countries in which those without any data are moved to the bottom in pandas;

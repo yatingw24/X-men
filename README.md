@@ -125,49 +125,5 @@ the presentable format is a table. In my template, `select_gender.html', I first
 </tr>
 ```
 
-then, looping through each country's data for the selected gender:
-```python
-
-{% for entry in ages %}
-    <tr>
-        <td>{{ entry['Country'] }}</td>
-        <td>
-            {% if entry[gender] != 'not available' %}
-                {{ entry[gender] }} years
-            {% else %}
-                Data not available
-            {% endif %}
-        </td>
-    </tr>
-{% endfor %}
-```
-### Linking everything
-To link everything, I went back to my `app.py`. I added and adjusted a few more lines of codes:
-
-```python
-country = request.args.get("country_name")
-select_gender = request.args.get("gender")
-```
-
-If a user specifies a `country_name`, the app searches for matching rows in the data and returns details for that `country`:
-```python
-    if country:
-        matching_rows = df[df['Country'] == country]
-        country=matching_rows.to_dict("records")[0]
-        
-        return render_template('individual_age.html',
-                               country = country
-                               )
-``` 
-If a user specifies a `gender`, the app searches for matching rows in the data and returns details for that `gender':
-```python
-        age=age.to_dict('records')
-        return render_template('select_gender.html',
-                                   gender=select_gender,
-                                   ages=age)
-```
-
 ## Things I'd like to add/improve:
-1. insert a chart showing gender difference for each country;\
-2. use gender as a secondary filter  to exactly pinpoint a specific gender's age in a specific country;\
-3. If possible, I'd like my app to autogenerate a chart for comparision purposes if an user would like to see the age difference for females in two countries.
+1. 

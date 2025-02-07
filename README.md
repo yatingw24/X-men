@@ -29,6 +29,12 @@ Questions that this article aims to answer:
  - `csv`
  - `DataWrapper`
 
+### A Break Down of Files:
+ - `X-men_analysis.ipynb`: the jupyter notebook where I did my majority of data cleaning and analysis.
+ - `febay_output.csv`: average price per X-Man on eBay for issues published in the 80s and the 90s. 
+ - `female_output.csv`: each female X-Man's percentage of presence in issues published in 80s and 90s.
+ - `x-men.csv`: the original dataset that contains price information on all 26 X-Men characters. 
+
 ### Data Cleaning and Analysis 
 1. assigned a gender for all 26 X-Men.
 2. created a dataframe, `df_female`, which contains all information, issues each is featured in different decades and market value on various audtion sites.

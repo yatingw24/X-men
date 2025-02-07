@@ -36,15 +36,15 @@ Questions that this article aims to answer:
 4. replaced all signs, such as a dollar sign ($) or a percentage sign (%).
 5. selected columns, `member`, `90s_Appearance_Percent` and `80s_Appearance_Percent` to see the change in the amount of presence in issues published in the 80s versus the 90s:
 
-    `member`: X-Men's names.
-    `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
-    `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
+- `member`: X-Men's names.
+- `90s_Appearance_Percent`: the percentage of appearance in issues published after 1990.
+- `80s_Appearance_Percent`: the percentage of appearance in issues published between 1980 and 1989.
 
 6. analyzed the market value of each X-Man by pulling out columns `PPI80s_ebay` and `PPI90s_ebay`:
 
-    `PPI80s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published between 1980 and 1989;
-    `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published after 1990;
-    
+- `PPI80s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published between 1980 and 1989;
+- `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published after 1990;
+
 7. exported dataframes into csv ready for upload in Data viz tool.
 
 ### Data Vizs 

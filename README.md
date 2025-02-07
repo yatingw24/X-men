@@ -1,11 +1,16 @@
 # The Market Value of Jean Grey Among Female X-Men
 X-Men, first made their debut in American Comics in 1963, are a group of mutants - humans with supernatural power that manifested at puberty - that later reached a huge fanbase. 
-Here is the shortcut to my article [web!](https://a-project-about-ages-at-marriagegunicorn.onrender.com/)
+Here is the shortcut to my [article:](https://yatingw24.github.io/X-men/)
 
-## Goals:
-1. learning and using Flask and pandas to create a simplified interactive application;\
-2. converting a dataframe from one version to another - a csv file to an html page;\
-3. getting myself familiarized with HTML and CSS basic formatting.
+## Goal:
+understanding the shift in the market value of female X-Men by comparing their percentage of appearance in the 80s vs. the 90s and average personal price on auction websites such as eBay.\
+
+Questions that this article aims to answer:
+1. what drives the disappearance, or the resurgence, of a female character?
+2. in which era does X-Men of more diverse background came into play?
+3. as more characters were created, does the core members need to make more space for them?
+4. how willingly do collectors of X-Men issues are to pay for a premium for rare issues and rare characters?
+5. are female X-Men in the 80s just auxiliary?
 
 ## What I Did:
 ### Getting Started

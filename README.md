@@ -49,87 +49,17 @@ Questions that this article aims to answer:
 6. analyzed the market value of each X-Man by pulling out columns `PPI80s_ebay` and `PPI90s_ebay`:
 
 - `PPI80s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published between 1980 and 1989;
-- `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on Very Good Condition published after 1990;
+- `PPI90s_ebay`: average market price for a certain X-Man on eBay for issues on _Very Good Condition_ published after 1990;
 
 7. exported dataframes into csv ready for upload in Data viz tool.
 
 ### Data Vizs 
-1. created the `app.py` file, adding the homepage route:
-```python
-@app.route("/")
-def age_at_marriage():
+1. represent the change in percentage of presence from the 80s to the 90s with a side-by-side <ins>horizontal stack bar chart:
+- those with an increase of presence were highlighted.
 
-    df = pd.read_csv("ages.csv")
-    ages = df.to_dict('records')
-
-    ages=ages
-```
-2. building the html template `age_at_marriage.html`;
-```python
-<body>
-    <h1>Age at First Marriage Across Countries</h1>
-```
-3. rendering it to a full web page: 
-```python 
-return render_template(
-    'age_at_marriage.html')
-
-```
-
-### Adding More Pages and Content
-#### `Country` as a filter
-now, we want pages for each country, right?
-So I built another route, `age_at_marriage/<country_name>` and another template, `individual_age.html`.
-The logic is pretty simple here:
-```python
-<h1>In {{country['Country']}}, the average age at first marriage for...</h1>
-<h2>
-    {% if country['Female'] != "not available" %}
-        Female's age at her first marriage is {{country['Female'] |int}} years old.
-    {% else %}
-        Data for female's age at first marriage is not available, sorry. 
-    {% endif %}
-</h2>
-```
-If an integer, aka `the age`, is unavilable for a country, then a `not available` will be returned:  
-```python
-<h2>
-    {% if country['Male'] != "not available"  %}
-        Male's age at his first marriage {{country['Male'] |int}} years old.
-    {% else %}
-        Data for male's age at first marriage is not available, sorry. 
-    {% endif %}
-</h2>
-```
-#### `Gender` as a filter
-Due to time constraint towards the end of semester, I was't able to add gender as a secondary condition/filter. However, I did try to add a new route which is similar to the `@app.route("/<country_name>")` route:
-
-```python 
-@app.route("/<gender>", methods=["GET"])
-def age_by_gender(gender):
-    df = pd.read_csv("ages.csv")
-
-    gender = request.args.get("gender")
-```
-An user is able to look up a sepcific gender's data for all countries: 
-```python
-    
-if gender == "Female":
-    age = df[['Country', 'Female']]
-elif gender == "Male":
-    age = df[['Country', 'Male']]
-
-ages = ages.to_dict('records')
-return render_template('select_gender.html', gender=gender, ages=ages)
-```
-
-the presentable format is a table. In my template, `select_gender.html', I first set up each column's name:
-```python
-<tr>
-    <th>Country</th>
-    <th>Age at First Marriage for {{ gender }}</th>
-</tr>
-```
+2. show female X-Men's average price over time in two separate scatterplot.
+- x-axis:
+- y-axis:
 
 ## Things I'd like to add/improve:
 1. 

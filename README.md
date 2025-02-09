@@ -60,6 +60,7 @@ Questions that this article aims to answer:
 2. show female X-Men's average price over time in two separate scatterplot.
 - x-axis: Average price per issue published in the 80s and the 90s. 
 - y-axis: Percentage of Appearance for each X-Men character in issues published in the 80s and the 90s. 
+- each green circle represents one female X-Man. 
 
 ## Limitations & Things I'd Like to Improve
 1. This is a data-driven project done within one week - I would like to conduct an in-depth research into Jean Grey.

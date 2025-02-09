@@ -58,8 +58,10 @@ Questions that this article aims to answer:
 - those with an increase of presence were highlighted.
 
 2. show female X-Men's average price over time in two separate scatterplot.
-- x-axis:
-- y-axis:
+- x-axis: Average price per issue published in the 80s and the 90s. 
+- y-axis: Percentage of Appearance for each X-Men character in issues published in the 80s and the 90s. 
 
-## Things I'd like to add/improve:
-1. 
+## Limitations & Things I'd Like to Improve
+1. This is a data-driven project done within one week - I would like to conduct an in-depth research into Jean Grey.
+2. The dataset also listed average prices on various auction sites such as heritage. A comparison between price difference for each character on different sites could be also interesting. 
+3. While more and more female superheros emerge, how their value in second-hand market is different from male X-Men's is worth analyzing. 

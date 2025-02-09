@@ -62,6 +62,11 @@ Questions that this article aims to answer:
 - y-axis: Percentage of Appearance for each X-Men character in issues published in the 80s and the 90s. 
 - each green circle represents one female X-Man. 
 
+### Skills Newly Acquired
+1. used both pandas and regex to curate a clean dataframe;
+2. practiced html and css when building the story page for this project;
+3. converted data analysis and findings into journalistic languages.
+
 ## Limitations & Things I'd Like to Improve
 1. This is a data-driven project done within one week - I would like to conduct an in-depth research into Jean Grey.
 2. The dataset also listed average prices on various auction sites such as heritage. A comparison between price difference for each character on different sites could be also interesting. 

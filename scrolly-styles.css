@@ -27,11 +27,6 @@
     display: block;  
 }
 
-.video-container {
-    position: sticky;
-    top: 0;
-    z-index: -1;
-}
 
 .scrolly-container video {
     position: absolute;
